@@ -1,0 +1,39 @@
+{
+    "provider": {
+        "name": "post_test"
+    },
+    "consumer": {
+        "name": "test_consumer"
+    },
+    "interactions": [
+        {
+            "description": "POST REQUEST",
+            "request": {
+                "method": "POST",
+                "path": "/pact"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "name": "Micaela"
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "testing a POST"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.0"
+        }
+    }
+}
